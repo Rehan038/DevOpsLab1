@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse our photo gallery of incredible India – stunning shots of the Taj Mahal, Kerala Backwaters, and Goa's pristine beaches." />
+  <title>Gallery – Explore India</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="logo-icon">🇮🇳</span>
+      <h1>Explore<span>India</span></h1>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="places.html">Places</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> / <span>Gallery</span>
+  </div>
+  <h2>Photo Gallery</h2>
+  <p>A visual journey through the colours, landscapes and culture of Incredible India.</p>
+</div>
+
+<section class="content-section">
+  <div class="gallery-grid">
+
+    <div class="gallery-item reveal" data-caption="Taj Mahal – Agra, Uttar Pradesh" data-src="./images/tajmahal.jpg">
+      <img src="./images/tajmahal.jpg" alt="Taj Mahal, Agra" loading="lazy" />
+      <div class="gallery-overlay"><span>Taj Mahal</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-caption="Kerala Backwaters – Alleppey, Kerala" data-src="./images/kerala.jpg">
+      <img src="./images/kerala.jpg" alt="Kerala Backwaters" loading="lazy" />
+      <div class="gallery-overlay"><span>Kerala Backwaters</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-caption="Goa Beaches – Panaji, Goa" data-src="./images/goa.jpeg">
+      <img src="./images/goa.jpeg" alt="Goa Beaches" loading="lazy" />
+      <div class="gallery-overlay"><span>Goa Beaches</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-caption="Taj Mahal at Sunrise – Agra" data-src="./images/tajmahal.jpg">
+      <img src="./images/tajmahal.jpg" alt="Taj Mahal at sunrise" loading="lazy" style="filter:sepia(20%) saturate(1.3);" />
+      <div class="gallery-overlay"><span>Taj Mahal – Sunrise</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-caption="Peaceful Kerala Waterways" data-src="./images/kerala.jpg">
+      <img src="./images/kerala.jpg" alt="Kerala waterways" loading="lazy" style="filter:saturate(1.4) hue-rotate(5deg);" />
+      <div class="gallery-overlay"><span>Kerala Waterways</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-caption="Golden Hour on Goa Beach" data-src="./images/goa.jpeg">
+      <img src="./images/goa.jpeg" alt="Goa golden hour" loading="lazy" style="filter:brightness(0.92) saturate(1.5);" />
+      <div class="gallery-overlay"><span>Goa – Golden Hour</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+  <img src="" alt="" id="lightbox-img" />
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">Explore<span>India</span></div>
+      <p>Your ultimate guide to the most breathtaking destinations across the Indian subcontinent.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Top Destinations</h4>
+      <ul>
+        <li><a href="places.html">Taj Mahal</a></li>
+        <li><a href="places.html">Kerala Backwaters</a></li>
+        <li><a href="places.html">Goa Beaches</a></li>
+        <li><a href="places.html">Rajasthan Forts</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>Explore India</span>. Crafted with ❤️ for wanderers.</p>
+  </div>
+</footer>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>

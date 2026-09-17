@@ -1,57 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Explore India</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore India – Discover the most breathtaking destinations across India. From the Taj Mahal to Kerala Backwaters, start your journey today." />
+  <title>Explore India – Discover Incredible Destinations</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
+<!-- ═══════════ HEADER ═══════════ -->
 <header>
-    <h1>Explore India!!</h1>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Places</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#">Contact</a>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="logo-icon">🇮🇳</span>
+      <h1>Explore<span>India</span></h1>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="places.html">Places</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </div>
 </header>
 
+<!-- ═══════════ HERO ═══════════ -->
+<!-- id="hero-section" preserved from main branch -->
 <section class="hero" id="hero-section">
-    <h2>Discover Incredible India</h2>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Discover the Wonder</div>
+    <h2>Discover <em>Incredible</em><br>India</h2>
     <p>Experience culture, heritage, vibrant traditions and breathtaking nature — by day and night.</p>
 
+    <!-- hero-actions class preserved from main branch -->
     <div class="hero-actions">
-        <button class="btn-primary" onclick="showMessage()">Explore Featured Tours</button>
-        <button class="btn-secondary" onclick="alert('Viewing popular packages!')">View Packages</button>
-        <button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+      <button class="btn-primary" onclick="showMessage()">🗺️ Explore Featured Tours</button>
+      <button class="btn-secondary" onclick="scrollToPlaces()">View Packages</button>
+      <button class="theme-toggle-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
     </div>
+  </div>
 </section>
 
-<section class="places">
+<!-- ═══════════ STATS ═══════════ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="num">29+</div>
+      <div class="label">States</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">40</div>
+      <div class="label">UNESCO Sites</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">7500km</div>
+      <div class="label">Coastline</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">1000+</div>
+      <div class="label">Destinations</div>
+    </div>
+  </div>
+</div>
 
-    <div class="card">
+<!-- ═══════════ FEATURED PLACES ═══════════ -->
+<section class="content-section" id="places">
+  <div class="section-header reveal">
+    <span class="eyebrow">Top Destinations</span>
+    <h2>Must-Visit Places in India</h2>
+    <p>Handpicked destinations that showcase the diversity and beauty of this incredible nation.</p>
+  </div>
+
+  <div class="places-grid">
+
+    <div class="card reveal">
+      <div class="card-img-wrap">
+        <img src="./images/tajmahal.jpg" alt="Taj Mahal, Agra" class="card-img" loading="lazy" />
+        <span class="card-badge">UNESCO</span>
+      </div>
+      <div class="card-body">
         <h3>Taj Mahal</h3>
-        <p>Agra, Uttar Pradesh</p>
+        <div class="card-location">📍 Agra, Uttar Pradesh</div>
+        <p>A timeless symbol of love, this ivory-white marble mausoleum is one of the Seven Wonders of the World.</p>
+        <div class="card-tags">
+          <span class="tag">Heritage</span>
+          <span class="tag">Architecture</span>
+          <span class="tag">Must See</span>
+        </div>
+      </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
+      <div class="card-img-wrap">
+        <img src="./images/kerala.jpg" alt="Kerala Backwaters" class="card-img" loading="lazy" />
+        <span class="card-badge">Nature</span>
+      </div>
+      <div class="card-body">
         <h3>Kerala Backwaters</h3>
-        <p>God's Own Country</p>
+        <div class="card-location">📍 Alleppey, Kerala</div>
+        <p>Glide through tranquil lagoons and lush green paddy fields on traditional houseboats. God's Own Country.</p>
+        <div class="card-tags">
+          <span class="tag">Backwaters</span>
+          <span class="tag">Relaxation</span>
+          <span class="tag">Nature</span>
+        </div>
+      </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
+      <div class="card-img-wrap">
+        <img src="./images/goa.jpeg" alt="Goa Beaches" class="card-img" loading="lazy" />
+        <span class="card-badge">Beach</span>
+      </div>
+      <div class="card-body">
         <h3>Goa Beaches</h3>
-        <p>Sun, Sand and Sea</p>
+        <div class="card-location">📍 Panaji, Goa</div>
+        <p>Sun-kissed shores, vibrant nightlife, Portuguese architecture, and some of the finest seafood in India.</p>
+        <div class="card-tags">
+          <span class="tag">Beaches</span>
+          <span class="tag">Nightlife</span>
+          <span class="tag">Food</span>
+        </div>
+      </div>
     </div>
 
+  </div>
+
+  <div style="text-align:center; margin-top:2.5rem;">
+    <a href="places.html" class="btn-primary" style="text-decoration:none; display:inline-flex;">🌏 View All Destinations</a>
+  </div>
 </section>
 
+<!-- ═══════════ FOOTER ═══════════ -->
 <footer>
-    <p>© 2026 Explore India</p>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">Explore<span>India</span></div>
+      <p>Your ultimate guide to the most breathtaking destinations across the Indian subcontinent. Start your journey today.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Top Destinations</h4>
+      <ul>
+        <li><a href="places.html">Taj Mahal</a></li>
+        <li><a href="places.html">Kerala Backwaters</a></li>
+        <li><a href="places.html">Goa Beaches</a></li>
+        <li><a href="places.html">Rajasthan Forts</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>Explore India</span>. Crafted with ❤️ for wanderers.</p>
+  </div>
 </footer>
 
 <script src="./scripts/script.js"></script>
-
 </body>
 </html>
