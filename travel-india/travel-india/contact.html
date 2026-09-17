@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Explore India – Plan your dream trip to India. Reach out with your queries and our travel experts will help you." />
+  <title>Contact – Explore India</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="logo-icon">🇮🇳</span>
+      <h1>Explore<span>India</span></h1>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="places.html">Places</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> / <span>Contact</span>
+  </div>
+  <h2>Get in Touch</h2>
+  <p>Planning a trip? Have a question? Our team is here to help you explore India.</p>
+</div>
+
+<section class="content-section">
+  <div class="contact-grid">
+
+    <!-- Contact Info -->
+    <div class="contact-info reveal">
+      <h3>Let's Plan Your Journey</h3>
+      <p>Fill out the form and our travel experts will get back to you within 24 hours to help craft your perfect India itinerary.</p>
+
+      <div class="info-item">
+        <div class="info-icon">📧</div>
+        <div class="info-text">
+          <strong>Email Us</strong>
+          <span>hello@exploreindia.in</span>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div class="info-text">
+          <strong>Call Us</strong>
+          <span>+91 98765 43210</span>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          <strong>Office</strong>
+          <span>Connaught Place, New Delhi – 110001</span>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <div class="info-text">
+          <strong>Working Hours</strong>
+          <span>Mon–Sat, 9 AM – 7 PM IST</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form reveal">
+      <form id="contact-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group" id="fg-name">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+            <span class="error-msg">Please enter your full name.</span>
+          </div>
+          <div class="form-group" id="fg-email">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+            <span class="error-msg">Please enter a valid email address.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group" id="fg-phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" />
+            <span class="error-msg">Please enter a valid phone number.</span>
+          </div>
+          <div class="form-group" id="fg-destination">
+            <label for="destination">Interested Destination *</label>
+            <select id="destination" name="destination">
+              <option value="">-- Select a destination --</option>
+              <option value="taj-mahal">Taj Mahal, Agra</option>
+              <option value="kerala">Kerala Backwaters</option>
+              <option value="goa">Goa Beaches</option>
+              <option value="rajasthan">Rajasthan Forts</option>
+              <option value="himalayas">The Himalayas</option>
+              <option value="varanasi">Varanasi</option>
+              <option value="other">Other / Multiple</option>
+            </select>
+            <span class="error-msg">Please select a destination.</span>
+          </div>
+        </div>
+
+        <div class="form-group" id="fg-message">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel plans, group size, preferred dates..."></textarea>
+          <span class="error-msg">Please enter your message (at least 20 characters).</span>
+        </div>
+
+        <button type="submit" class="btn-primary" id="submit-btn" style="width:100%; justify-content:center;">
+          ✉️ Send Message
+        </button>
+
+        <div class="form-success" id="form-success">
+          🎉 Thank you! Your message has been sent. We'll get back to you within 24 hours.
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">Explore<span>India</span></div>
+      <p>Your ultimate guide to the most breathtaking destinations across the Indian subcontinent.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Top Destinations</h4>
+      <ul>
+        <li><a href="places.html">Taj Mahal</a></li>
+        <li><a href="places.html">Kerala Backwaters</a></li>
+        <li><a href="places.html">Goa Beaches</a></li>
+        <li><a href="places.html">Rajasthan Forts</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>Explore India</span>. Crafted with ❤️ for wanderers.</p>
+  </div>
+</footer>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>
