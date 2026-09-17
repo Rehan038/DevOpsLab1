@@ -18,11 +18,66 @@ nav a{
 
 .hero{
     text-align:center;
-    padding:50px;
+    padding:50px 20px;
+    background: #fff8f0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 button{
     padding:10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background: #ff9933;
+    color: white;
+}
+
+.btn-secondary {
+    background: #138808;
+    color: white;
+}
+
+.theme-toggle-btn {
+    background: #1a1a2e;
+    color: #eaeaea;
+    border: 1px solid #e94560;
+}
+
+/* Dark Theme support */
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-theme .hero {
+    background: #1a1a2e;
+    color: #eaeaea;
+    border-bottom: 2px solid #e94560;
+}
+
+body.dark-theme .card {
+    background: #1f1f2e;
+    border-color: #33334d;
+    color: #f1f1f1;
 }
 
 .places{
